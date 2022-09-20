@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube - Dummy Page</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 250px;
+        }
+
+        button {
+            display: block;
+            margin: auto;
+            margin-top: 50px;
+            cursor: pointer;
+            padding: 10px 20px 10px 20px;
+            border: none;
+            border-radius: 7px;
+            background-color: rgb(212, 212, 212);
+            width: 120px;
+            height: 45px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: rgb(161, 161, 161);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is a Dummy Page</h1>
+    <button onclick="goBack()">Go back</button>
+</body>
+
+</html>
+
+<script>
+    let goBack = () => {
+        window.location.href = "./index.html"
+    }
+</script>

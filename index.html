@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+
+    <script src="https://kit.fontawesome.com/c0b6ca2d16.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+
+<body>
+    <div id="horiz-nav">
+        <div id="horiz-left-nav">
+            <div id="menu" onclick="menu()"><i class="fa-solid fa-bars"></i></div>
+            <div id="ytIcon" onclick="ytIcon()"> <img id="ytimg"
+                    src="https://1000logos.net/wp-content/uploads/2017/05/Youtube-logo.jpg" alt="YT logo">
+            </div>
+        </div>
+
+        <div id="horiz-middle-nav">
+            <Div id="SearchDiv">
+
+                <input id="searchInput" oninput="debauncing(SearchSug,500)" type="text" placeholder="Search">
+                <div id="appendSuggestion"></div>
+
+            </Div>
+
+            <Div id="buttonDiv" onclick="getData()"><Button><i class="fa fa-search"></i></Button></Div>
+
+            <Div id="micLogoDiv"><i class="fa-solid fa-microphone"></i></Div>
+
+        </div>
+
+        <div id="horiz-right-nav">
+            <div>
+                <select name="" id="filterSelect">
+                    <option value="none">Filter By Views</option>
+                    <option value="10M">Above 10M</option>
+                    <option value="5M">Above 5M</option>
+                    <option value="below5M">Below 5M</option>
+                </select>
+            </div>
+            <div id="setting"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+            <div id="signin" onclick="signin()"><i class='far fa-user-circle'></i>Sign in</div>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="vert-nav">
+            <div id="homeDiv" style="margin-bottom: 50px;" onclick="homeDiv()"><i class="fa-solid fa-house"></i><br>
+            </div>
+            <div id="exploreDiv" style="margin-bottom: 50px;" onclick="exploreDiv()"><i
+                    class="fa-solid fa-compass"></i><br></div>
+            <div id="shortsDiv" style="margin-bottom: 50px;" onclick="shortsDiv()"><i class="fa-solid fa-play"></i><br>
+            </div>
+            <div id="subscriptionDiv" style="margin-bottom: 50px;" onclick="subscriptionDiv()"><i
+                    class="fa-solid fa-hand-pointer"></i><br></div>
+            <div id="library" onclick="library()"><i class="fa fa-forward"></i><br></div>
+        </div>
+        <div id="right-container">
+            <div id="top-suggestion">
+                <button class="top-sug-button" onclick="allButton()" id="all"> All</button>
+                <button class="top-sug-button" onclick="live()" id="live">Live</button>
+                <button class="top-sug-button" onclick="playlists()" id="playlists">Playlists</button>
+                <button class="top-sug-button" onclick="bollywoodMusic()" id="bollywoodMusic">Bollywood Music</button>
+                <button class="top-sug-button" onclick="comedies()" id="comedies">Comedies</button>
+                <button class="top-sug-button" onclick="tamilCinema()" id="tamilCinema">Tamil Cinema</button>
+                <button class="top-sug-button" onclick="music()" id="music">Music</button>
+                <button class="top-sug-button" onclick="t_sereis()" id="t-sereis">T-Series</button>
+                <button class="top-sug-button" onclick="gaming()" id="gaming">Gaming</button>
+                <button class="top-sug-button" onclick="javaScript()" id="javaScript">JavaScript</button>
+                <button class="top-sug-button" onclick="trailers()" id="trailers">Trailers</button>
+            </div>
+            <div id="preview"></div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./index.js"></script>
